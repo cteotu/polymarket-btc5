@@ -128,10 +128,10 @@ def log(msg: str, color: str = WHITE) -> None:
 @dataclass
 class Config:
     PROGRAM_NAME: str = "Polymarket BTC 5m Favorite Side Sniper CLOB V2 修复版"
-    PAPER_MODE: bool = False
+    PAPER_MODE: bool = True
 
     # 实盘
-    LIVE_TRADING_ENABLED: bool = True
+    LIVE_TRADING_ENABLED: bool = False
     LIVE_CONFIRM_FILE: str = "live_trading_confirm.txt"
     LIVE_CONFIRM_TEXT: str = "ENABLE_LIVE_TRADING"
     LIVE_CHAIN_ID: int = 137
